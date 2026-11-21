@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #e8e4ff 0%, #d4ecf7 100%);
+  color: #2b2b3a;
+}
+
+.login {
+  width: 100%;
+  max-width: 380px;
+  padding: 36px 32px;
+  background: #a5b3f3;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(60, 50, 120, 0.15);
+}
+
+
+.input-box {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 13px 12px 13px 42px;
+  font-size: 15px;
+  border: 1.5px solid #cfd0e0;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-box input:focus {
+  border-color: #5b4bd6;
+  box-shadow: 0 0 0 3px rgba(91, 75, 214, 0.18);
+}
+
+
+.input-box ion-icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #6b6b85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.input-box label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #6b6b85;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 0;
+  left: 12px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5b4bd6;
+  background: #fff;
+}
+
+.input-box input:focus ~ ion-icon,
+.input-box input:valid ~ ion-icon {
+  color: #5b4bd6;
+}
+
+/* Remember me ও Forget password */
+.remember-forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.remember-forget label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+a {
+  color: #5b4bd6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #5b4bd6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #4a3bc0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.regiistration-link {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.regiistration-link p,
+.regiistration-link a {
+  display: inline;
+}
